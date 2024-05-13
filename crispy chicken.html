@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crispy Chicken</title>
+    <link rel="stylesheet" href="./styles.css"/>
+     <!--link for font awesome kit-->
+     <script src="https://kit.fontawesome.com/cb6d4234cb.js" crossorigin="anonymous"></script>   
+</head>
+<body>
+    <h1 class="cal">Crispy Chicken Cutlets</h1>
+    <div class="center-image">
+    <img src="./images/img5.webp" width="30%" height="30%" alt="img2"/>
+</div>
+    <p>There are two kinds of chicken cutlets in the world—there are crispy cutlets and there are cutlets not worth eating. We're here to talk about the former. This method for how to fry chicken cutlets will teach you how to do it right every time, resulting in a golden-brown crust on the outside and juicy chicken on the inside. The great news is that method is simple: You'll start with chicken breasts, pound them until tender, and then coat with eggs and panko, a Japanese-style breadcrumb that is essential for maximum crispiness. Panko browns evenly, whereas a finer breadcrumb can burn or clump.</p>
+
+        <h2 class="cal"><u class="cal">Instructions</u></h2>
+        <h3 class="one">Step 1</h3>
+        <p>
+            Place 1 cutlet on top of a large piece of plastic wrap. Sprinkle with a few drops of water and cover with another piece of plastic wrap; pound chicken using a meat mallet, rolling pin, or heavy skillet, starting in the middle and working outward, until about ½ inch thick. Transfer to a baking sheet lined with parchment paper. Repeat with remaining cutlets and season with ½ teaspoon each salt and pepper.
+        </p>
+        <h3 class="one">Step 2</h3>
+        <p>Beat eggs with ½ teaspoon salt and ¼ teaspoon pepper in a shallow dish. Stir together panko, ½ teaspoon salt, and remaining ¼ teaspoon pepper in a separate dish. Working with 1 cutlet at a time, dip chicken in eggs and turn to coat, letting excess drip off. Dredge chicken in panko, pressing gently to adhere.</p>
+        <h3 class="one">Step 3</h3>
+        <p>
+            Fill a large heavy-bottomed skillet with ½ inch oil; heat over medium-high. (Drop a pinch of panko into oil— it will sizzle immediately when oil is hot enough.) Working in 3 batches, add chicken to hot oil. Cook, turning once and adjusting heat so oil is sizzling but not smoking, until golden brown and cooked through, about 3 minutes per side. Transfer cooked cutlets to a wire rack. Repeat with remaining chicken, adding oil to keep at ½-inch depth. Season with remaining teaspoon salt. Serve with lemon wedges.
+        </p>
+    <h2 class="cal"><u class="cal">Ingredients</u></h2>
+    <ul>
+        <li>3 6-ounce boneless, skinless chicken breasts, halved lengthwise, or 6 chicken breast cutlets</li>
+
+<li>2 teapoons kosher salt, divided</li>
+
+<li>1 teaspoon black pepper, divided</li>
+
+<li>2 large eggs, beaten</li>
+
+<li>2 cups panko</li>
+
+<li>Vegetable oil, for frying</li>
+
+<li>Lemon wedges, for serving</li>
+
+<h2 class="cal">
+    <u class="cal"> Preparation Time:</u>
+ </h2>
+<h3 class="one"><center>40 min</center></h3>
+<section class="ratings">
+    <h2 class="cal"><u class="cal">User Ratings:</u></h2>
+    <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5">&#9733;</label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4">&#9733;</label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1">&#9733;</label>
+    </div>
+    <p id="ratingValue"></p>
+</section>
+<div class="recipe">
+    <!-- Favorite button -->
+    <button id="favoriteButton">Add to Favorites</button><br> 
+</div>
+<!--footer-->
+<section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <p>&copy; 2024 CulinaShare. All rights reserved.</p>
+          <a href="#"><!--will move the page to top after clicking icon-->
+          <img src="./logo/culinashare.jpeg" width="5%"/>
+          </a>
+          <p class="phead">CulinaShare</p>
+        <div class="col-12 text-center">
+          <div >
+            <i class="fa-brands icon fa-instagram"></i>
+            <i class="fa-brands icon fa-facebook"></i>
+            <i class="fa-brands icon fa-linkedin-in"></i>
+            <i class="fa-brands icon fa-twitter"></i>
+            <i class="fa-brands icon fa-youtube"></i>
+          </div>
+          <div class="arrow">
+            <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  
+<script>
+    const ratingStars = document.querySelectorAll('.rating input');
+    const ratingValue = document.getElementById('ratingValue');
+
+    for (let star of ratingStars) {
+        star.addEventListener('click', function() {
+            ratingValue.textContent = `User Rating: ${this.value} stars`;
+        });
+    }
+</script>
+<script src="script.js"></script>
+</ul>
+</body>
+</html>

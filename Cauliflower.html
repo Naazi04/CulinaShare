@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cauliflower Recipe</title>
+    <link rel="stylesheet" href="./styles.css">
+    <!--link for font awesome kit-->
+    <script src="https://kit.fontawesome.com/cb6d4234cb.js" crossorigin="anonymous"></script>   
+</head>
+<body>
+    <h1 class="cal">Cauliflower Tartine With Romesco Sauce</h1>
+    <div class="center-image">
+        <img src="./images/img1.webp" width="30%" height="30%" alt="img2"/>
+    </div>
+    <h4>
+        With some roasted cauliflower and some quick-pickled with shallots, garlic, and golden raisins, this is a vegetarian sandwich you've never had before. cauliflower two-ways! A flavorful and creamy sauce called Romesco holds this cauliflower recipe together, but grab a knife and fork to eat this open-faced sandwich. The Romesco sauce recipe is a combination of roasted red peppers (look for them jarred at the supermarket), tomato paste, raw almonds, and other simple ingredients you’ll likely have in your healthy pantry.
+    </h4>
+    <h2 class="cal"><u class="cal">Instructions</u></h2>
+    <h3 class="one">Step 1</h3>
+    <p>
+        Preheat oven to 400°F. Thinly slice half of the cauliflower half (leaving core intact) and set aside remaining cauliflower half. Place cauliflower slices and raisins in a heat-safe bowl. Place water, 1/2 cup of the vinegar, 1 of the smashed garlic cloves, and ½ teaspoon of the salt in a saucepan and bring to a simmer over medium-high. Remove from heat and pour mixture over cauliflower and raisins in bowl and stir gently. Allow to pickle at room temperature at least 15 minutes or up to 30 minutes. Drain pickling liquid; discard or reserve for another use.
+    </p>
+    <h3 class="one">Step 2</h3>
+    <p>While cauliflower mixture pickles, cut remaining half of the cauliflower half into small florets and spread in an even layer on a rimmed baking sheet. Toss with 1 teaspoon of the oil and 1/8 teaspoon of the salt. Place in preheated oven and roast until cauliflower is tender and golden brown on the underside, 18 to 20 minutes, stirring halfway through cook time. Remove from oven.</p>
+    <h3 class="one">Step 3</h3>
+    <p>
+        Place almonds, roasted bell peppers, tomato paste, black pepper, crushed red pepper, and remaining 1 tablespoon vinegar, 1 smashed clove garlic, ½ teaspoon salt, and 2 tablespoons oil in a food processor and process until mostly smooth, about 1 minute, stopping to scrape down sides as needed.
+    </p>
+    <h3 class="one">Step 4</h3>
+    <p>Spread sauce evenly over toasted bread slices. Top with pickled cauliflower slices and roasted cauliflower florets. Garnish with parsley and crushed red pepper.</p>
+    <h2 class="cal"><u class="cal">
+        Ingredients
+    </u>
+    </h2>
+    <ul>
+        <li>½ small (1 pound, 3 ounces) head cauliflower
+        </li>
+        <li>2 tablespoons golden raisins</li>
+        <li>½ cup water</li>
+        <li>½ cup plus one tablespoon apple cider vinegar, divided</li>
+        <li>2 cloves garlic, smashed, divided</li>
+        <li>1 ⅛ teaspoon fine sea salt, divided</li>
+        <li>2 tablespoons plus one teaspoon olive oil, divided</li> 
+        <li>⅓ cup roasted unsalted almonds</li>
+        <li>⅓ cup drained roasted red bell peppers (from 1 [12 ounce] jar)</li>
+        <li>1 tablespoon canned tomato paste</li>
+        <li>⅛ teaspoon freshly ground black pepper</li>
+        <li>⅛ teaspoon crushed red pepper, plus more for serving</li>
+        <li>2 (1-inch-thick) sourdough bread slices, toasted</li>
+        <li>Fresh flat-leaf parsley leaves and tender stems, for serving</li>
+    </ul>
+    <h2 class="cal">
+       <u class="cal"> Preparation Time:</u>
+    </h2>
+    <h3 class="one"><center>25 min</center></h3>
+    <section class="ratings">
+        <h2 class="cal"><u class="cal">User Ratings:</u></h2>
+        <div class="rating">
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">&#9733;</label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">&#9733;</label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">&#9733;</label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">&#9733;</label>
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1">&#9733;</label>
+        </div>
+        <p id="ratingValue"></p>
+    </section>
+    <div class="recipe">
+        <!-- Favorite button -->
+        <button id="favoriteButton">Add to Favorites</button><br> 
+    </div>
+    <!--footer-->
+        <section class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+                <p>&copy; 2024 CulinaShare. All rights reserved.</p>
+              <a href="#"><!--will move the page to top after clicking icon-->
+              <img src="./logo/culinashare.jpeg" width="5%"/>
+              </a>
+              <p class="phead">CulinaShare</p>
+            <div class="col-12 text-center">
+              <div >
+                <i class="fa-brands icon fa-instagram"></i>
+                <i class="fa-brands icon fa-facebook"></i>
+                <i class="fa-brands icon fa-linkedin-in"></i>
+                <i class="fa-brands icon fa-twitter"></i>
+                <i class="fa-brands icon fa-youtube"></i>
+              </div>
+              <div class="arrow">
+                <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+      
+    <script>
+        const ratingStars = document.querySelectorAll('.rating input');
+        const ratingValue = document.getElementById('ratingValue');
+
+        for (let star of ratingStars) {
+            star.addEventListener('click', function() {
+                ratingValue.textContent = `User Rating: ${this.value} stars`;
+            });
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

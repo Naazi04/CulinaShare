@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thai Curry</title>
+    <link rel="stylesheet" href="./styles.css"/>
+     <!--link for font awesome kit-->
+     <script src="https://kit.fontawesome.com/cb6d4234cb.js" crossorigin="anonymous"></script>   
+</head>
+<body>
+    <h1 class="cal">Thai Curry Vegetable and Tofu Soup</h1>
+    <div class="center-image">
+    <img src="./images/img3.webp" width="30%" height="30%" alt="img2"/>
+</div>
+    <p>Do you have a lovely childhood memory of warming up with a bowl of soup on a cold winter's day? For many, it would have been creamy tomato soup (and, if you were lucky, a grilled cheese alongside it). This healthy, plant-based Thai curry vegetable soup is a grown-up version of that childhood pleasure.
+
+        This flavorful soup recipe gets a healthy kick from curry paste and a unique twist from fresh lime juice. Does the mention of grilled cheese give you a hankering for that, too? Whip up a grown-up Parmigiano-Reggiano grilled cheese for a complete meal.
+        <h2 class="cal"><u class="cal">Instructions</u></h2>
+        <h3 class="one">Step 1</h3>
+        <p>
+            Place the curry paste and ginger in a medium pot. Whisk in the broth, coconut milk, and 1 teaspoon salt and bring to a boil.
+        </p>
+        <h3 class="one">Step 2</h3>
+        <p>Add the mushrooms, green beans, and carrots and simmer until just tender, 3 to 5 minutes.</p>
+        <h3 class="one">Step 3</h3>
+        <p>
+            Add the tofu and snow peas and simmer until the snow peas are bright green, about 1 minute more.
+        </p>
+        <h3 class="one">Step 4</h3>
+        <p>
+            Stir in the lime juice. Sprinkle with the basil and serve with the chili garlic sauce.
+        </p>
+    <h2 class="cal"><u class="cal">Ingredients</u></h2>
+    <ul>
+        <li>1 tablespoon Thai red curry paste</li>
+
+        <li>2 cups low-sodium vegetable broth</li>
+
+        <li>1 14-ounce can coconut milk</li>
+
+        <li>kosher salt</li>
+
+        <li>½ pound shiitake mushrooms, stems removed and caps thinly sliced</li>
+
+        <li>4 ounces green beans, halved</li>
+
+        <li>2 carrots, halved lengthwise and sliced crosswise</li>
+
+        <li>14 ounces extra-firm tofu, drained and cut into cubes</li>
+
+        <li>4 ounces snow peas</li>
+
+<li>2 tablespoons fresh lime juice</li>
+
+<li>¼ cup torn fresh basil leaves</li>
+
+<li>Asian chili garlic sauce, for serving</li>
+    </ul>
+<h2 class="cal">
+    <u class="cal"> Preparation Time:</u>
+ </h2>
+<h3 class="one"><center>30 min</center></h3>
+<section class="ratings">
+    <h2 class="cal"><u class="cal">User Ratings:</u></h2>
+    <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5">&#9733;</label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4">&#9733;</label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1">&#9733;</label>
+    </div>
+    <p id="ratingValue"></p>
+</section>
+<div class="recipe">
+    <!-- Favorite button -->
+    <button id="favoriteButton">Add to Favorites</button><br> 
+</div>
+<!--footer-->
+<section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <p>&copy; 2024 CulinaShare. All rights reserved.</p>
+          <a href="#"><!--will move the page to top after clicking icon-->
+          <img src="./logo/culinashare.jpeg" width="5%"/>
+          </a>
+          <p class="phead">CulinaShare</p>
+        <div class="col-12 text-center">
+          <div >
+            <i class="fa-brands icon fa-instagram"></i>
+            <i class="fa-brands icon fa-facebook"></i>
+            <i class="fa-brands icon fa-linkedin-in"></i>
+            <i class="fa-brands icon fa-twitter"></i>
+            <i class="fa-brands icon fa-youtube"></i>
+          </div>
+          <div class="arrow">
+            <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  
+<script>
+    const ratingStars = document.querySelectorAll('.rating input');
+    const ratingValue = document.getElementById('ratingValue');
+
+    for (let star of ratingStars) {
+        star.addEventListener('click', function() {
+            ratingValue.textContent = `User Rating: ${this.value} stars`;
+        });
+    }
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>

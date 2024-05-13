@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pumpkin Bread</title>
+    <link rel="stylesheet" href="./styles.css"/>
+     <!--link for font awesome kit-->
+     <script src="https://kit.fontawesome.com/cb6d4234cb.js" crossorigin="anonymous"></script>   
+    
+</head>
+<body>
+    <h1 class="cal">Pumpkin Bread Trifle With Pepita Streusel</h1>
+    <div class="center-image">
+    <img src="./images/img7.webp" width="30%" height="30%" alt="img2"/>
+</div>
+    <p>We said it: This is the official dessert of fall. You’ll start by baking a simple loaf of pumpkin bread. Then, bake off a crumbly and sweet streusel made with flour, sugar, butter, pumpkin pie spice, and pepitas for some delightful crunch. The glue that holds this easy trifle together is sweetened cream cheese and fluffy whipped cream, which make cloud-like layers between pieces of spongey pumpkin bread and sprinklings of streusel. If you don’t have a trifle dish, use a large bowl or glass jars for individual servings.   </p>
+
+        <h2 class="cal"><u class="cal">Instructions</u></h2>
+        <h3 class="one">Step 1</h3>
+        <p>
+            Preheat oven to 350°F. Stir together flour, butter, pepitas, pumpkin pie spice, salt, 1/4 cup brown sugar, and 2 tablespoons granulated sugar in a medium bowl. Spread evenly on a rimmed baking sheet lined with parchment paper. Bake until golden brown, 20 to 25 minutes. Stir to break up any large pieces. Let cool completely, about 15 minutes.
+
+        </p>
+        <h3 class="one">Step 2</h3>
+        <p>Beat cream in a medium bowl with an electric mixer on medium-high speed until soft peaks form, about 90 seconds. Beat cream cheese and remaining 2 tablespoons brown sugar and 6 tablespoons granulated sugar in a large bowl with mixer on medium speed until smooth, about 1 minute. (No need to clean beaters in between.)</p>
+        <h3 class="one">Step 3</h3>
+        <p>
+            Fold half of whipped cream into cream cheese mixture until just combined. Fold in remaining whipped cream.
+
+        </p>
+        <h3 class="one">Step 4</h3>
+        <p>
+            Place 4 cups pumpkin bread cubes in a large trifle dish. Spread 2 cups cream cheese mixture over bread; sprinkle with 1/2 cup pepita streusel. Repeat layers twice. Sprinkle trifle with remaining 1/2 cup streusel. Refrigerate, covered, for up to 1 day.
+        </p>
+    <h2 class="cal"><u class="cal">Ingredients</u></h2>
+    <ul>
+
+<li>1/2 cup all-purpose flour</li>
+
+<li>1/4 cup (1/2 stick) unsalted butter, melted</li>
+
+<li>1/4 cup roasted pumpkin seeds</li>
+
+<li>1/2 teaspoon pumpkin pie spice</li>
+
+<li>1/4 teaspoon kosher salt</li>
+
+<li>1/4 cup plus 2 tablespoons packed dark brown sugar, divided</li>
+
+<li>8 tablespoons granulated sugar, divided</li>
+
+<li>2 cups heavy cream</li>
+
+<li>2 8-ounce packages cream cheese, softened</li>
+
+<li>12 cups 1-inch cubes pumpkin bread (from 1 large loaf)</li>
+<h2 class="cal">
+    <u class="cal"> Preparation Time:</u>
+ </h2>
+<h3 class="one"><center>25 min</center></h3>
+<section class="ratings">
+    <h2 class="cal"><u class="cal">User Ratings:</u></h2>
+    <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5">&#9733;</label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4">&#9733;</label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1">&#9733;</label>
+    </div>
+    <p id="ratingValue"></p>
+</section>
+<div class="recipe">
+    <!-- Favorite button -->
+    <button id="favoriteButton">Add to Favorites</button><br> 
+</div>
+<!--footer-->
+<section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <p>&copy; 2024 CulinaShare. All rights reserved.</p>
+          <a href="#"><!--will move the page to top after clicking icon-->
+          <img src="./logo/culinashare.jpeg" width="5%"/>
+          </a>
+          <p class="phead">CulinaShare</p>
+        <div class="col-12 text-center">
+          <div >
+            <i class="fa-brands icon fa-instagram"></i>
+            <i class="fa-brands icon fa-facebook"></i>
+            <i class="fa-brands icon fa-linkedin-in"></i>
+            <i class="fa-brands icon fa-twitter"></i>
+            <i class="fa-brands icon fa-youtube"></i>
+          </div>
+          <div class="arrow">
+            <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+ <script src="script.js"></script>
+<script>
+    const ratingStars = document.querySelectorAll('.rating input');
+    const ratingValue = document.getElementById('ratingValue');
+
+    for (let star of ratingStars) {
+        star.addEventListener('click', function() {
+            ratingValue.textContent = `User Rating: ${this.value} stars`;
+        });
+    }
+</script>
+
+</ul>
+</body>
+</html>

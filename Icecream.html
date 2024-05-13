@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Sundaes</title>
+    <link rel="stylesheet" href="./styles.css"/>
+     <!--link for font awesome kit-->
+     <script src="https://kit.fontawesome.com/cb6d4234cb.js" crossorigin="anonymous"></script>   
+</head>
+<body>
+    <h1 class="cal">Honeydew and Blackberry Ice Cream Sundaes</h1>
+    <div class="center-image">
+    <img src="./images/img9.webp" width="30%" height="30%" alt="img2"/>
+</div>
+    <p>Sure, you could top vanilla ice cream with chocolate sauce and a cherry, but why not try a reinvention of a summer sundae with this recipe? You'll start by stirring together a sesame-almond brittle that's infused with honey, and then nestle scoops of blackberry ice cream with honeydew melon. Topped with shards of the sweet brittle and a sprinkle of sea salt, the result is sophisticated and unexpectedly delicious. If you can't find blackberry ice cream, peach would work well with this combination, too. </p>
+
+        <h2 class="cal"><u class="cal">Instructions</u></h2>
+        <h3 class="one">Step 1</h3>
+        <p>
+            Line a baking sheet with a silicone mat or parchment paper. Stir sugar, honey, 1 tablespoon water, and kosher salt in a small, heavy-bottomed saucepan. Cook over medium, stirring constantly, until sugar and honey are dissolved, about 30 seconds. Stir in sesame seeds and almonds; cook, stirring often, until mixture turns amber (or reaches 300°F on a candy thermometer), 5 to 7 minutes.
+        </p>
+        <h3 class="one">Step 2</h3>
+        <p>Remove from heat. Stir in butter and oil until butter is melted. Working very quickly, stir in baking soda (mixture will foam a bit). Immediately pour onto prepared baking sheet. Slightly tilt baking sheet from side to side to help spread mixture evenly. Let cool until completely hardened, 15 to 20 minutes. Break into pieces. (Brittle may be stored in an air-tight container at room temperature for up to 5 days.)</p>
+        <h3 class="one">Step 3</h3>
+        <p>Meanwhile, cut melon in half; remove and discard seeds. Using a melon baller, scoop out 36 balls (or cut into cubes). Place 2 scoops of ice cream and 6 melon balls in each of 6 bowls. Sprinkle evenly with flaky sea salt and serve with brittle.
+        </p>
+    <h2 class="cal"><u class="cal">Ingredients</u></h2>
+    <ul>
+
+<li>¾ cup granulated sugar</li>
+
+<li>¼ cup honey</li>
+
+<li>⅛ teaspoon kosher salt</li>
+
+<li>1 cup sesame seeds</li>
+
+<li>½ cup raw sliced almonds</li>
+
+<li>1 ½ teaspoon unsalted butter</li>
+
+<li>½ teaspoon toasted sesame oil</li>
+
+<li>¼ teaspoon baking soda</li>
+
+<li>1 firm-ripe honeydew melon</li>
+
+<li>2 pints blackberry ice cream (such as Jeni's or Häagen-Dazs)</li>
+
+<li>½ teaspoon flaky sea salt</li>
+<h2 class="cal">
+    <u class="cal"> Preparation Time:</u>
+ </h2>
+<h3 class="one"><center>35 min</center></h3>
+<section class="ratings">
+    <h2 class="cal"><u class="cal">User Ratings:</u></h2>
+    <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5">&#9733;</label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4">&#9733;</label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1">&#9733;</label>
+    </div>
+    <p id="ratingValue"></p>
+</section>
+<div class="recipe">
+    <!-- Favorite button -->
+    <button id="favoriteButton">Add to Favorites</button><br> 
+</div>
+<!--footer-->
+<section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <p>&copy; 2024 CulinaShare. All rights reserved.</p>
+          <a href="#"><!--will move the page to top after clicking icon-->
+          <img src="./logo/culinashare.jpeg" width="5%"/>
+          </a>
+          <p class="phead">CulinaShare</p>
+        <div class="col-12 text-center">
+          <div >
+            <i class="fa-brands icon fa-instagram"></i>
+            <i class="fa-brands icon fa-facebook"></i>
+            <i class="fa-brands icon fa-linkedin-in"></i>
+            <i class="fa-brands icon fa-twitter"></i>
+            <i class="fa-brands icon fa-youtube"></i>
+          </div>
+          <div class="arrow">
+            <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  
+<script>
+    const ratingStars = document.querySelectorAll('.rating input');
+    const ratingValue = document.getElementById('ratingValue');
+
+    for (let star of ratingStars) {
+        star.addEventListener('click', function() {
+            ratingValue.textContent = `User Rating: ${this.value} stars`;
+        });
+    }
+</script>
+<script src="script.js"></script>
+</ul>
+</body>
+</html>

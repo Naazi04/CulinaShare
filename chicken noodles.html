@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Noodles</title>
+    <link rel="stylesheet" href="./styles.css"/>
+     <!--link for font awesome kit-->
+     <script src="https://kit.fontawesome.com/cb6d4234cb.js" crossorigin="anonymous"></script>   
+</head>
+<body>
+    <h1 class="cal">Chicken Noodle Soup</h1>
+    <div class="center-image">
+    <img src="./images/img4.webp" width="30%" height="30%" alt="img2"/>
+</div>
+    <p>Homemade chicken noodle soup is soul-warming food at its best. While there are several go-to chicken recipes to choose from, consider this homemade chicken soup if you're craving some comfort food. It might seem like a lot of work to cook an entire chicken, pick the meat off, and return it to the broth, but rest assured that using a whole chicken is worth the effort. Not only is the flavor from an entire chicken much more delicious, but it is significantly cheaper than buying chicken parts.
+
+        Once poached, the meat is easy to pick off the bones, and you can save the bones and skin to make a batch of homemade chicken stock—bonus points for buying an organic chicken raised on an antibiotic-free, vegetarian diet. To make a gluten-free version of this soup, you can use rice noodles instead of egg ones or even swap in brown rice for a whole-grain option.
+
+        <h2 class="cal"><u class="cal">Instructions</u></h2>
+        <h3 class="one">Step 1</h3>
+        <p>
+            Combine chicken, broth, bay leaves, garlic, 2 teaspoons salt, and 8 cups water in a large pot. Bring to a boil, then reduce to a simmer. Cover and simmer until chicken is cooked through, 35 to 40 minutes. Remove from heat. Transfer chicken to a cutting board. Strain stock into a large bowl and discard solids. Remove meat from chicken and shred; discard skin and bones.
+        </p>
+        <h3 class="one">Step 2</h3>
+        <p>Wipe the pot clean. Melt butter over medium-high. Add carrots, celery, onion, and thyme and cook, stirring occasionally, until softened, about 8 minutes. Add reserved stock and remaining 4 teaspoons salt; bring to a boil, stirring occasionally. Add noodles; cook according to package directions. Remove from heat and stir in shredded chicken, parsley, and pepper.
+       </p>
+       
+    <h2 class="cal"><u class="cal">Ingredients</u></h2>
+    <ul>
+        <li>1 (4-lb.) whole chicken</li>
+
+<li>8 cups low-sodium chicken broth</li>
+
+<li>2 dried bay leaves</li>
+
+<li>1 head garlic, halved</li>
+
+<li>6 teaspoons kosher salt, divided</li>
+
+<li>3 tablespoons unsalted butter</li>
+
+<li>5 carrots, thinly sliced</li>
+
+<li>4 stalks celery, thinly sliced</li>
+
+<li>1 yellow onion, chopped</li>
+
+<li>1 tablespoon chopped fresh thyme</li>
+
+<li>1 pound egg noodles</li>
+<li>3 tablespoons chopped fresh flat-leaf parsley</li>
+<li>¾ teaspoon freshly ground black pepper</li>
+<h2 class="cal">
+    <u class="cal"> Preparation Time:</u>
+ </h2>
+<h3 class="one"><center>35 min</center></h3>
+<section class="ratings">
+    <h2 class="cal"><u class="cal">User Ratings:</u></h2>
+    <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5">&#9733;</label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4">&#9733;</label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1">&#9733;</label>
+    </div>
+    <p id="ratingValue"></p>
+</section>
+<div class="recipe">
+    <!-- Favorite button -->
+    <button id="favoriteButton">Add to Favorites</button><br> 
+</div>
+<!--footer-->
+<section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <p>&copy; 2024 CulinaShare. All rights reserved.</p>
+          <a href="#"><!--will move the page to top after clicking icon-->
+          <img src="./logo/culinashare.jpeg" width="5%"/>
+          </a>
+          <p class="phead">CulinaShare</p>
+        <div class="col-12 text-center">
+          <div >
+            <i class="fa-brands icon fa-instagram"></i>
+            <i class="fa-brands icon fa-facebook"></i>
+            <i class="fa-brands icon fa-linkedin-in"></i>
+            <i class="fa-brands icon fa-twitter"></i>
+            <i class="fa-brands icon fa-youtube"></i>
+          </div>
+          <div class="arrow">
+            <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  
+<script>
+    const ratingStars = document.querySelectorAll('.rating input');
+    const ratingValue = document.getElementById('ratingValue');
+
+    for (let star of ratingStars) {
+        star.addEventListener('click', function() {
+            ratingValue.textContent = `User Rating: ${this.value} stars`;
+        });
+    }
+</script>
+<script src="script.js"></script>
+</ul>
+</body>
+</html>

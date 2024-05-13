@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tofu Fried rice</title>
+    <link rel="stylesheet" href="./styles.css"/>
+     <!--link for font awesome kit-->
+     <script src="https://kit.fontawesome.com/cb6d4234cb.js" crossorigin="anonymous"></script>   
+</head>
+<body>
+    <h1 class="cal">This Tofu Fried Rice Recipe Is a Weeknight Dinner Must</h1>
+    <div class="center-image">
+    <img src="./images/img2.webp" width="30%" height="30%" alt="img2"/>
+</div>
+    <p>At first glance, you might think this is takeout-style fried rice, but once you take a closer look, you’ll be pleasantly surprised to discover that this tofu fried rice recipe takes inspiration from biryani and tahdig.
+
+        The rice is aromatic like biryani with fragrant and flavorful notes of garlic, ginger, and turmeric, and crispy in spots like tahdig, which allow for pops of crunch as you eat your way through the dish. Crumbled tofu absorbs the turmeric oil and has the opportunity to crisp up with the rice, while plumped raisins provide bursts of sweetness that’ll have everyone saying “oooh” and “ahh”.   </p>
+
+        <h2 class="cal"><u class="cal">Instructions</u></h2>
+        <h3 class="one">Step 1</h3>
+        <p>
+            Wrap tofu in a clean kitchen towel. Press to remove excess moisture. (It’s OK if tofu falls apart.) Place tofu in a medium bowl and crumble into small pieces.
+        </p>
+        <h3 class="one">Step 2</h3>
+        <p>Heat 1/4 cup oil in a large nonstick skillet over medium. Add garlic, ginger, turmeric, and 1/4 cup raisins; cook, stirring often, until garlic is softened, about 2 minutes. Add crumbled tofu; cook, stirring constantly, until tofu absorbs turmeric oil, about 30 seconds.</p>
+        <h3 class="one">Step 3</h3>
+        <p>
+            Add rice and remaining 2 tablespoons oil to skillet; stir until thoroughly combined. Spread rice in an even layer and cook, undisturbed, until rice and tofu are crisp in spots, about 3 minutes. Stir and gently press rice into an even layer again. Cook, undisturbed, until rice and tofu are crisp in spots, about 3 minutes. Remove from heat. Stir in cilantro, lemon juice, salt, and remaining 1/4 cup raisins. Serve drizzled with yogurt, if desired.
+        </p>
+    <h2 class="cal"><u class="cal">Ingredients</u></h2>
+    <ul>
+        <li>1 14-oz. pkg. firm tofu, drained</li>
+
+<li>1/4 cup plus 2 Tbsp olive oil, divided</li>
+
+<li>2 Tbsp. thinly sliced garlic (from 4 large cloves)</li>
+
+<li>1 Tbsp finely chopped fresh ginger</li>
+
+<li>1 Tbsp ground turmeric</li>
+
+<li>1/2 cup raisins, divided</li>
+
+<li>3 cups leftover cooked long-grain white rice (such as basmati), any clumps broken up</li>
+
+<li>1 cup chopped fresh cilantro</li>
+
+<li>1 Tbsp fresh lemon juice (from 1 lemon)</li>
+
+<li>1 1/2 tsp kosher salt</li>
+
+<li>Plain whole-milk dairy or nondairy yogurt, for topping (optional)</li>
+<h2 class="cal">
+    <u class="cal"> Preparation Time:</u>
+ </h2>
+<h3 class="one"><center>25 min</center></h3>
+<section class="ratings">
+    <h2 class="cal"><u class="cal">User Ratings:</u></h2>
+    <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5">&#9733;</label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4">&#9733;</label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1">&#9733;</label>
+    </div>
+    <p id="ratingValue"></p>
+</section>
+<div class="recipe">
+    <!-- Favorite button -->
+    <button id="favoriteButton">Add to Favorites</button><br> 
+</div>
+<!--footer-->
+<section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <p>&copy; 2024 CulinaShare. All rights reserved.</p>
+          <a href="#"><!--will move the page to top after clicking icon-->
+          <img src="./logo/culinashare.jpeg" width="5%"/>
+          </a>
+          <p class="phead">CulinaShare</p>
+        <div class="col-12 text-center">
+          <div >
+            <i class="fa-brands icon fa-instagram"></i>
+            <i class="fa-brands icon fa-facebook"></i>
+            <i class="fa-brands icon fa-linkedin-in"></i>
+            <i class="fa-brands icon fa-twitter"></i>
+            <i class="fa-brands icon fa-youtube"></i>
+          </div>
+          <div class="arrow">
+            <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  
+<script>
+    const ratingStars = document.querySelectorAll('.rating input');
+    const ratingValue = document.getElementById('ratingValue');
+
+    for (let star of ratingStars) {
+        star.addEventListener('click', function() {
+            ratingValue.textContent = `User Rating: ${this.value} stars`;
+        });
+    }
+</script>
+<script src="script.js"></script>
+</ul>
+</body>
+</html>

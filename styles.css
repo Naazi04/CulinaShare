@@ -1,0 +1,196 @@
+/* Custom styles for CulinaShare website */
+
+@import url('https://fonts.googleapis.com/css2?family=Farsan&display=swap');
+
+* {
+    font-family: "Farsan", cursive;
+    font-weight: 400;
+    font-style: normal;
+    /* background-color:honeydew; */
+  }
+ 
+.navbar {
+    display: flex;
+    justify-content: center; /* It Align items horizontally in the center */
+    align-items: center; /* It Align items vertically in the center */
+    
+}
+
+.navbar-nav {
+    text-align: center; /* Align text horizontally in the center */
+    
+
+}
+.nav-item {
+    padding: 0 15px; /* Add some space between nav items */
+    font-weight: bold;
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+}
+.title{
+    text-align: center;
+    color: darkgoldenrod;
+    text-shadow: rgb(104, 100, 100);
+}
+.dropdown {
+    display: flex;
+    justify-content: center; /* Center the dropdown button horizontally */
+    margin-top: 20px; /* Add some top margin for spacing */
+}
+
+.dropdown .btn {
+    width: 150px; /* Adjust the width of the dropdown button */
+    text-align: center; /* Center the text inside the button */
+}
+.p .para{
+    font-weight: bold;
+}
+.dropdown-menu {
+    background-color: #b7babe !important; /* Dropdown menu background color */
+}
+
+/* Change dropdown menu item (card) text color */
+.dropdown-item a {
+    color: #444d4e !important; /* Dropdown menu item text color */
+}
+
+/* Hover effect for dropdown menu items */
+.dropdown-item:hover {
+    background-color: darkgoldenrod !important; /* Hover background color */
+}  
+/* Home Page */
+.card-deck {
+    margin-top: 20px;
+}
+.card-img-top {
+    height: 300px; /* Adjust the height as needed */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire space */
+}
+
+/* Add border to cards */
+.card {
+    border: 1px solid black; /* Default Bootstrap border color */
+    border-radius: 20px; /* Rounded corners for the card */
+    margin-bottom: 20px; /* Add some margin between cards */
+}
+/* Search Bar */
+.input-group {
+    margin-bottom: 20px;
+}
+
+/* Categories */
+.card {
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+.icon{
+    font-size: 25px;
+    color: white;
+    margin: 0.8%;
+    margin-top: 3%;
+}
+.fhead{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 3%;
+    color: white;
+    text-decoration: underline gold 4px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.phead{
+    color: white;
+    font-size: 25px;
+}
+.icon:hover{
+    color:gray;
+}
+.fa-solid:hover{
+    color: gray;
+}
+.fa-solid{
+    color: white;
+}
+.cal{
+    text-align: center;
+    color: darkgoldenrod;
+    text-shadow:#333;
+    font-weight: bold;
+}
+.one{
+    font-weight: bold;
+}
+.ratings{
+    text-align: center;
+    color: darkgoldenrod;
+    text-shadow:#333;
+    font-weight: bold;
+}
+.sec4 {
+    min-height: 100vh;
+}
+.center-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 20vh; Adjust to your preference for vertical centering */
+}
+.center-image img {
+    max-width: 100%; /* Ensure the image does not exceed container width */
+    max-height: 100%; /* Ensure the image does not exceed container height */
+}
+.rating {
+    display: inline-block;
+}
+.rating input {
+    display: none;
+}
+.rating label {
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+}
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked ~ label {
+    color: #ffcc00;
+}
+#cal{
+    text-align: center;
+    color: darkgoldenrod;
+    text-shadow:#333;
+    font-weight: bold;
+}
+#one{
+    font-weight: bold;
+}
+input.form-control:focus, textarea.form-control:focus {
+    border-color: darkgoldenrod; /* Change to your desired border color */
+    box-shadow: 0 0 0 0.2rem rgba(255, 87, 51, 0.25); /* Optional: add focus shadow */
+}
+    
+.recipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.nav-item .dropdown {
+   margin-top: auto;
+    
+}

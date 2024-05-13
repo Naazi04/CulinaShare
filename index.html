@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CulinaShare</title>
+    <link rel="icon" href="./logo/culinashare.jpeg">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!--link for bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--link for font awesome kit-->
+    <script src="https://kit.fontawesome.com/cb6d4234cb.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="./about.html">CulinaShare</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Recipe Details
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="./Cauliflower.html">Cauliflower Tartine With Romesco Sauce</a></li>
+                      <li><a class="dropdown-item" href="./tofu friedrice.html">Tofu Fried Rice</a></li>
+                      <li><a class="dropdown-item" href="./thai.html">Thai Curry Vegetable and Tofu Soup</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="./chicken noodles.html">Chicken Noodle Soup</a></li>
+                      <li><a class="dropdown-item" href="./crispy chicken.html">Crispy Chicken Cutlets</a></li>
+                      <li><a class="dropdown-item" href="./Spanish Omelet.html">Spanish Omelet With Potatoes and Chorizo</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="./Pumpkin Bread.html">Pumpkin Bread Trifle With Pepita Streusel</a></li>
+                      <li><a class="dropdown-item" href="./Dark Chocolate.html">Dark Chocolate Coconut Tartlets</a></li>
+                      <li><a class="dropdown-item" href="./Icecream.html">Honeydew and Blackberry Ice Cream Sundaes</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contribute.html">Contribute</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./favorites.html">Favorites</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main content area -->
+    <div class="container-fluid">
+        <!-- Home Page -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="title"><strong>Welcome to CulinaShare </strong><img src="./logo/culinashare.jpeg" width="3%"/></h1>
+                <p class="title"><strong>Discover new recipes, share your favorites, and explore a world of culinary delights!</strong></p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Search Bar -->
+    <div class="input-group mb-6 col-md-12">
+        <input type="text" class="form-control" placeholder="Search for recipes" aria-label="Search for recipes" aria-describedby="search-button">
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id="search-button">Search</button>
+        </div>
+    </div>
+
+    <!-- Dropdown -->
+    <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+            Categories
+        </a>
+  
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#veg">Vegetarian</a></li>
+            <li><a class="dropdown-item" href="#mea">Meals</a></li>
+            <li><a class="dropdown-item" href="#des">Desserts</a></li>
+        </ul>
+    </div>
+
+    <!-- Featured Recipes -->
+    <section class="#rec" id="veg">
+    <div class="card-deck">
+        <!-- First Card -->
+        <div class="card">
+            <img src="./images/img1.webp" class="card-img-top" alt="Recipe 1">
+            <div class="card-body d-flex flex-column align-items-center">
+                <h4 class="card-title">Cauliflower Tartine With Romesco Sauce</h4>
+                <p class="card-text">With just one pan and 25 minutes, this fried rice recipe is a breeze to get together.</p>
+                <a href="./Cauliflower.html" class="btn btn-secondary mt-auto">Recipe</a>
+            </div>
+        </div>
+        <!-- Second Card -->
+        <div class="card">
+            <img src="./images/img2.webp" class="card-img-top" alt="img4">
+            <div class="card-body d-flex flex-column align-items-center">
+                <h4 class="card-title">Tofu Fried Rice</h4>
+                <p class="card-text">With just one pan and 25 minutes, this fried rice recipe is a breeze to get together. Before serving, cilantro and lemon juice are stirred into the rice, and yogurt is drizzled on top.</p>
+                <a href="./tofu friedrice.html" class="btn btn-secondary mt-auto">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/img3.webp" class="card-img-top" alt="Recipe 1">
+            <div class="card-body d-flex flex-column align-items-center">
+                <h4 class="card-title">Thai Curry Vegetable and Tofu Soup</h4>
+                <p class="card-text">You don't have to order takeout to enjoy vegetarian Thai food. To recreate this traditional favorite, all you have to do is combine the ingredients on the stovetop.</p>
+                <a href="./thai.html" class="btn btn-secondary mt-auto">Recipe</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Featured Recipes -->
+    <section class="#rec" id="mea">
+        <div class="card-deck">
+            <!-- First Card -->
+            <div class="card">
+                <img src="./images/img4.webp" class="card-img-top" alt="Recipe 4">
+                <div class="card-body d-flex flex-column align-items-center">
+                    <h4 class="card-title">Chicken Noodle Soup</h4>
+                    <p class="card-text">This classic soup—a must during cold and flu season—keeps for about four to six months in the freezer if stored in airtight food storage containers. </p>
+                    <a href="./chicken noodles.html" class="btn btn-secondary mt-auto">Recipe</a>
+                </div>
+            </div>
+            <!-- Second Card -->
+            <div class="card">
+                <img src="./images/img5.webp" class="card-img-top" alt="img4">
+                <div class="card-body d-flex flex-column align-items-center">
+                    <h4 class="card-title">Crispy Chicken Cutlets</h4>
+                    <p class="card-text">These cutlets take just 40 minutes to make, and if you happen to have leftovers, feel free to freeze them. The best way to freeze these tasty, crispy cutlets is to place them on a baking sheet and pop them in the freezer for about an hour.</p>
+                    <a href="./crispy chicken.html" class="btn btn-secondary mt-auto">Recipe</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/img6.webp" class="card-img-top" alt="Recipe 1">
+                <div class="card-body d-flex flex-column align-items-center">
+                    <h4 class="card-title">Spanish Omelet With Potatoes and Chorizo</h4>
+                    <p class="card-text">Our version of traditional Spanish tortilla de patatas is delicious any time of day. This frittata-like dish is one of the best freezer-to-oven meals and is full of flavor from the chorizo and cheese. Bake, freeze, then reheat when ready. </p>
+                    <a href="./Spanish Omelet.html" class="btn btn-secondary mt-auto">Recipe</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Featured Recipes -->
+        <section class="#rec" id="des">
+            <div class="card-deck">
+                <!-- First Card -->
+                <div class="card">
+                    <img src="./images/img7.webp" class="card-img-top" alt="Recipe 1">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h4 class="card-title">Pumpkin Bread Trifle With Pepita Streusel</h4>
+                        <p class="card-text">A cream cheese-spiked trifle with a pumpkin spice streusel? Yes, please. You’ll start by baking a simple loaf of pumpkin bread. </p>
+                        <a href="./Pumpkin Bread.html" class="btn btn-secondary mt-auto">Recipe</a>
+                    </div>
+                </div>
+                <!-- Second Card -->
+                <div class="card">
+                    <img src="./images/img8.webp" class="card-img-top" alt="img4">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h4 class="card-title">Dark Chocolate Coconut Tartlets</h4>
+                        <p class="card-text">While it may be hard to believe that just 25 minutes stands between you and these cute tartlets, we promise that’s the case. The shredded coconut crust is piled high with nutty chocolate filling</p>
+                        <a href="./Dark Chocolate.html" class="btn btn-secondary mt-auto">Recipe</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/img9.webp" class="card-img-top" alt="Recipe 1">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h4 class="card-title">Honeydew and Blackberry Ice Cream Sundaes</h4>
+                        <p class="card-text">Don't skip this sundae recipe, especially since it’s ready to eat in just 35 minutes. </p>
+                        <a href="./Icecream.html" class="btn btn-secondary mt-auto">Recipe</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--footer-->
+        <section class="footer">    
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+                <p>&copy; 2024 CulinaShare. All rights reserved.</p>
+              <a href="#"><!--will move the page to top after clicking icon-->
+              <img src="./logo/culinashare.jpeg" width="5%"/>
+              </a>
+              <p class="phead">CulinaShare</p>
+            <div class="col-12 text-center">
+              <div >
+                <i class="fa-brands icon fa-instagram"></i>
+                <i class="fa-brands icon fa-facebook"></i>
+                <i class="fa-brands icon fa-linkedin-in"></i>
+                <i class="fa-brands icon fa-twitter"></i>
+                <i class="fa-brands icon fa-youtube"></i>
+              </div>
+              <div class="arrow">
+                <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+      
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crispy Chicken</title>
+    <link rel="stylesheet" href="./styles.css"/>
+     <!--link for font awesome kit-->
+     <script src="https://kit.fontawesome.com/cb6d4234cb.js" crossorigin="anonymous"></script>   
+</head>
+<body>
+    <h1 class="cal">Spanish Omelet</h1>
+    <div class="center-image">
+    <img src="./images/img6.webp" width="30%" height="30%" alt="img2"/>
+</div>
+    <p>A riff on Spain's tortilla española or tortilla de patatas, this frittata-like meal's delicious any time of day. Serve it with toast and fruit at brunch or, as shown, with a green salad and roll come dinnertime. Traditionally, the dish starts with potatoes fried in oil, then covered with beaten eggs and baked until cooked through. Our take adds Spanish chorizo, a cured sausage with a bit of a bite, fresh parsley, and shredded Manchego cheese, for a filling omelet that boasts a slew of flavors in every forkful. All you need is a large, ovenproof skillet to get started.</p>
+
+        <h2 class="cal"><u class="cal">Instructions</u></h2>
+        <h3 class="one">Step 1</h3>
+        <p>
+            Heat oven to 400° F. Heat 1 tablespoon of the oil in a large ovenproof skillet over medium heat. Add the yellow onion and cook for 5 minutes.
+        </p>
+        <h3 class="one">Step 2</h3>
+        <p>Add the chorizo, potatoes, and ½ teaspoon each salt and pepper and cook, covered, stirring occasionally, until the potatoes are tender, 10 minutes.
+
+        </p>
+        <h3 class="one">Step 3</h3>
+        <p>
+            Stir in the parsley. Pour in the eggs and stir to distribute the ingredients. Sprinkle with the cheese and transfer to oven.
+        </p>
+        <h3 class="one">Step 4</h3>
+        <p>
+            Bake the omelet until puffed and brown around the edges and a knife comes out clean, about 15 minutes.
+        </p>
+        <h3 class="one">Step 5</h3>
+        <p>
+            Divide the lettuce and red onion among plates and drizzle with the remaining oil. Cut the omelet into wedges and serve with the salad.
+        </p>
+    <h2 class="cal"><u class="cal">Ingredients</u></h2>
+    <ul>
+        <li>3 tablespoons extra-virgin olive oil</li>
+
+<li>1 large yellow onion, chopped</li>
+
+<li>2 ounces Spanish chorizo (cured sausage), sliced into thin half-moons</li>
+
+<li>¾ pound red potatoes, diced</li>
+
+<li>kosher salt and pepper</li>
+
+<li>¾ cup flat-leaf parsley, roughly chopped</li>
+
+<li>10 large eggs, beaten</li>
+
+<li>1 cup (4 ounces) shredded Manchego or sharp Cheddar</li>
+
+<li>1 small head green-leaf lettuce</li>
+
+<li>½ small red onion, thinly sliced</li>
+
+<h2 class="cal">
+    <u class="cal"> Preparation Time:</u>
+ </h2>
+<h3 class="one"><center>15 min</center></h3>
+<section class="ratings">
+    <h2 class="cal"><u class="cal">User Ratings:</u></h2>
+    <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5">&#9733;</label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4">&#9733;</label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1">&#9733;</label>
+    </div>
+    <p id="ratingValue"></p>
+</section>
+<div class="recipe">
+    <!-- Favorite button -->
+    <button id="favoriteButton">Add to Favorites</button><br> 
+</div>
+<!--footer-->
+<section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <p>&copy; 2024 CulinaShare. All rights reserved.</p>
+          <a href="#"><!--will move the page to top after clicking icon-->
+          <img src="./logo/culinashare.jpeg" width="5%"/>
+          </a>
+          <p class="phead">CulinaShare</p>
+        <div class="col-12 text-center">
+          <div >
+            <i class="fa-brands icon fa-instagram"></i>
+            <i class="fa-brands icon fa-facebook"></i>
+            <i class="fa-brands icon fa-linkedin-in"></i>
+            <i class="fa-brands icon fa-twitter"></i>
+            <i class="fa-brands icon fa-youtube"></i>
+          </div>
+          <div class="arrow">
+            <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  
+<script>
+    const ratingStars = document.querySelectorAll('.rating input');
+    const ratingValue = document.getElementById('ratingValue');
+
+    for (let star of ratingStars) {
+        star.addEventListener('click', function() {
+            ratingValue.textContent = `User Rating: ${this.value} stars`;
+        });
+    }
+</script>
+<script src="script.js"></script>
+</ul>
+</body>
+</html>

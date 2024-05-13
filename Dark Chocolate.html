@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Chocolate</title>
+    <link rel="stylesheet" href="./styles.css"/>
+     <!--link for font awesome kit-->
+     <script src="https://kit.fontawesome.com/cb6d4234cb.js" crossorigin="anonymous"></script>   
+</head>
+<body>
+    <h1 class="cal">Dark Chocolate Coconut Tartlets</h1>
+    <div class="center-image">
+    <img src="./images/img8.webp" width="30%" height="30%" alt="img2"/>
+</div>
+    <p>Shredded coconut forms the crust in this mini tartlets recipe. The tart shell is crisp around the edges yet chewy in the center like a macaroon. Make the nutty chocolate filling with sunflower seed butter or your favorite nut butter for a sweet treat with a protein boost. Be sure to melt the chocolate gently so it doesn’t scorch. </p>
+
+        <h2 class="cal"><u class="cal">Instructions</u></h2>
+        <h3 class="one">Step 1</h3>
+        <p>
+            Preheat oven to 350°F. Generously coat 20 cups of a miniature muffin pan with cooking spray.
+
+        </p>
+        <h3 class="one">Step 2</h3>
+        <p>Whisk egg whites in a large bowl until frothy, about 30 seconds. Add coconut, vanilla, 1 tablespoon maple syrup, and ¼ teaspoon ground sea salt, and then whisk until well incorporated.</p>
+        <h3 class="one">Step 3</h3>
+        <p>
+            Place about 2 teaspoons mixture in each muffin cup, pressing evenly with the back of a teaspoon into the bottom and up the sides of each cup. Bake in preheated oven until golden brown around the edges and dry in the center, about 15 minutes.
+        </p>
+        <h3 class="one">Step 4</h3>
+        <p>
+            Meanwhile, microwave chocolate in a microwavable bowl on HIGH, until melted and smooth, about 1 minute, stopping and stirring every 30 seconds. Stir in cashew butter, cocoa, 1 tablespoon water, and remaining 1 tablespoon maple syrup and ¼ teaspoon ground sea salt until well incorporated.
+        </p>
+        <h3 class="one">Step 5</h3>
+        <p>
+            Transfer the chocolate mixture to a ziplock plastic bag, and snip a small hole in 1 corner. Pipe the mixture into cooled tartlet shells and then sprinkle with flaky sea salt.
+
+Tartlets can be made up to 1 day ahead. Store, loosely covered, at room temperature.
+        </p>
+    <h2 class="cal"><u class="cal">Ingredients</u></h2>
+    <ul>
+
+<li>Cooking spray</li>
+
+<li>2 large egg whites</li>
+
+<li>1¼ cups unsweetened shredded coconut</li>
+
+<li>1 teaspoon vanilla extract</li>
+
+<li>2 tablespoons pure maple syrup, divided</li>
+
+<li>½ teaspoon finely ground sea salt, divided</li>
+
+<li>2 ounces bittersweet chocolate, chopped</li>
+
+<li>½ cup creamy sunflower seed butter or other nut or seed butter</li>
+
+<li>1 tablespoon unsweetened cocoa</li>
+
+<li>¼ teaspoon flaky sea salt (approximate)</li>
+<h2 class="cal">
+    <u class="cal"> Preparation Time:</u>
+ </h2>
+<h3 class="one"><center>25 min</center></h3>
+<section class="ratings">
+    <h2 class="cal"><u class="cal">User Ratings:</u></h2>
+    <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5">&#9733;</label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4">&#9733;</label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1">&#9733;</label>
+    </div>
+    <p id="ratingValue"></p>
+</section>
+<div class="recipe">
+    <!-- Favorite button -->
+    <button id="favoriteButton">Add to Favorites</button><br> 
+</div>
+<!--footer-->
+<section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <p>&copy; 2024 CulinaShare. All rights reserved.</p>
+          <a href="#"><!--will move the page to top after clicking icon-->
+          <img src="./logo/culinashare.jpeg" width="5%"/>
+          </a>
+          <p class="phead">CulinaShare</p>
+        <div class="col-12 text-center">
+          <div >
+            <i class="fa-brands icon fa-instagram"></i>
+            <i class="fa-brands icon fa-facebook"></i>
+            <i class="fa-brands icon fa-linkedin-in"></i>
+            <i class="fa-brands icon fa-twitter"></i>
+            <i class="fa-brands icon fa-youtube"></i>
+          </div>
+          <div class="arrow">
+            <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  
+<script>
+    const ratingStars = document.querySelectorAll('.rating input');
+    const ratingValue = document.getElementById('ratingValue');
+
+    for (let star of ratingStars) {
+        star.addEventListener('click', function() {
+            ratingValue.textContent = `User Rating: ${this.value} stars`;
+        });
+    }
+</script>
+<script src="script.js"></script>
+</ul>
+</body>
+</html>
